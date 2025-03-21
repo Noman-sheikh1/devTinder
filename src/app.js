@@ -1,19 +1,22 @@
 const express = require('express');
 const app = express();
+const {adminAuth,userAuth}=require("./middleware/auth");
 
-app.use("/test", (req, res,next) => {
-    console.log("Hello from the server, I am here after 1st router");
-    next();
-},(req, res,next) => {
-    console.log("Hello from the server, I am here after 2st router");
-    next();
-},(req, res,next) => {
-    console.log("Hello from the server, I am here after 3st router");
-    next();
-},(req, res,next) => {
-    console.log("Hello from the server, I am here after 4st router");
-    res.send("Response4!!!")
+app.use("/admin",adminAuth);
+app.use("/user/login",(req,res)=>{
+    res.send("Login successfully!..");
 });
+app.use("/user",userAuth,(req,res)=>{
+    res.send("User data sent");
+});
+
+app.use("/admin/getAllData",(req,res)=>{
+    res.send("All Data sent");
+});
+app.use("/admin/deleteUser",(req,res)=>{
+    res.send("Deleted a user");
+});
+
 
 app.listen(7777, () => {
     console.log("Server is successfully listening on port 7777");

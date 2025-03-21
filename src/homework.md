@@ -9,3 +9,10 @@
 --what are dependencies
 --what is the use of "-g" while npm install 
 --difference between caret and tildde(^and~)
+--multiple route handlers-play with the code
+--next()
+--next function and errors along with res.send()
+--what is middleware?why we need middleware?
+-- how express JS basically handles request behind the scenes
+--difference between app.use and app.all
+--
