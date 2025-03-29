@@ -1,24 +1,32 @@
 const express = require('express');
+const connectDB = require("./config/database");
+
 const app = express();
-const {adminAuth,userAuth}=require("./middleware/auth");
-
-app.use("/admin",adminAuth);
-app.use("/user/login",(req,res)=>{
-    res.send("Login successfully!..");
-});
-app.use("/user",userAuth,(req,res)=>{
-    res.send("User data sent");
-});
-
-app.use("/admin/getAllData",(req,res)=>{
-    res.send("All Data sent");
-});
-app.use("/admin/deleteUser",(req,res)=>{
-    res.send("Deleted a user");
+const User=require("./models/user");
+app.post("/signup",async(req,res)=>{
+    const user=new User({
+        firstName:"Noman",
+        lastName:"sheikh",
+        emailId:"Sheikhnoman@gmail.com",
+        password:"sheikh@123"
+    });
+ await user.save();
+ res.send("User added successfullly!!");
 });
 
+connectDB()
+  .then(() => {
+    console.log("Database connected successfully");
+    app.listen(7777, () => {
+      console.log("Server is successfully listening on port 7777");
+    });
+  })
+  .catch((err) => {
+    console.error("Database connection failed:", err);
+  });
 
-app.listen(7777, () => {
-    console.log("Server is successfully listening on port 7777");
-});
 
+
+
+
+//mongodb+srv://Noman:<db_password>@mycluster.7ttwa.mongodb.net/?retryWrites=true&w=majority&appName=myCluster

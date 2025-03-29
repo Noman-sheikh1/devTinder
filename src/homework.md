@@ -15,4 +15,13 @@
 --what is middleware?why we need middleware?
 -- how express JS basically handles request behind the scenes
 --difference between app.use and app.all
---
+--  writew dummy auth middleware
+--write dummy auth middleware for user
+-- error handling using app.use("/",(err,req,res,next)={});
+
+urlfor connection string==mongodb+srv://Noman:maansheikh@123@mycluster.7ttwa.mongodb.net/
+--createfree cluster on mongodb official websites
+--installl mongoose library
+--connect your application to the database<"Connection-url"
+--connect the connectDb function and connect to databse befiore starting application on server
+
