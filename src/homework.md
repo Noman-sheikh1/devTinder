@@ -24,4 +24,20 @@ urlfor connection string==mongodb+srv://Noman:maansheikh@123@mycluster.7ttwa.mon
 --installl mongoose library
 --connect your application to the database<"Connection-url"
 --connect the connectDb function and connect to databse befiore starting application on server
+--call the connectDB function and connect to database before satarting application on 7777
+--create POST/signup API to add to database
+--push some documents using API calls from postman 
+--error handling using try,catch
+--JS object and JSON (differnec)
+--add the express.json middleware to your app
+--make ur signup API dynamic to receive data from the end user
+--user signup Api dynamic to recieve data from the end user
+--user.findOne with duplicate email ids,which objecct returned
+--API -get user by email
+--Api -feed api --get api -get all the user
+--create a delete user api 
+diffrence btween patch and put
+--explore a mongoose documentation for model methods
+--what are option in a model.findOneAndUpdate method,explore more  about it
+--api-update the user with email id
 
