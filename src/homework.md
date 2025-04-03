@@ -40,4 +40,9 @@ diffrence btween patch and put
 --explore a mongoose documentation for model methods
 --what are option in a model.findOneAndUpdate method,explore more  about it
 --api-update the user with email id
+--explore schema type option from the documentation 
+--add required , unique, lowercase,min,=.,minLength,trim
+--create a custom validate function  fro gender
+--improve the db schema -put all appropriate validation on each feild in schema
+--add timestamps to the user
 
