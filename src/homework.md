@@ -45,4 +45,14 @@ diffrence btween patch and put
 --create a custom validate function  fro gender
 --improve the db schema -put all appropriate validation on each feild in schema
 --add timestamps to the user
+--add api level validation patch  required
+--data sanitization -add api validation for each feild
+--install validator
+--explore validatoe library
+--validaet data oin signup API
+--install bcrypt package
+-- crate passwordHash using bcrypt.hash and save the user is encrypted password
+--compare password and throw errors if emial or password is invalid
+--or if both are correct email and password then send login successfully 
+
 
