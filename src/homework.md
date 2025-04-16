@@ -54,5 +54,10 @@ diffrence btween patch and put
 -- crate passwordHash using bcrypt.hash and save the user is encrypted password
 --compare password and throw errors if emial or password is invalid
 --or if both are correct email and password then send login successfully 
-
-
+--install cookies-parser
+--just send a dummy cookies to user 
+-create GET/Profile Api and password validation ,create a jwt token and send it to user inside cookies
+--read the cookies inside  ypur profile API and find the logged in user
+--userAuth middleware
+--add the userAuth middleware in profile api  and a new send connection requst api
+--set the expiry of jwt token and cookies to 7 days
