@@ -61,3 +61,10 @@ diffrence btween patch and put
 --userAuth middleware
 --add the userAuth middleware in profile api  and a new send connection requst api
 --set the expiry of jwt token and cookies to 7 days
+--create userSchema method to getjwt()
+--create userschmea method to compare password
+--explore tinder APIs
+--create a list of tinder api u can think of
+--grp multiple routes under respective router
+
+ 
