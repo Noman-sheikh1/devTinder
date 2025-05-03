@@ -65,6 +65,22 @@ diffrence btween patch and put
 --create userschmea method to compare password
 --explore tinder APIs
 --create a list of tinder api u can think of
---grp multiple routes under respective router
+--group multiple routes under respective router
+-- read documentation for express.router
+--create routes for managing auth,profile,requestrouters
+-create authrouter,profileRouter,requestRouter
+--inport these routers in app.js
+--create POST/logout API
+--Create PATCH/profile/edit
+--create PATCH/profile /password API=?forgot password API
+--make you validate all data in every post,patch apis
+
+--create connectionRequestSchema
+--send connectionRequest api
+--proper validation of data
+--read more about indexes in mongoDB
+--why do we need index
+--advantages and disadvantages of index
+
 
  
